@@ -17,6 +17,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  border: 1px blue solid; 
 }
 
 .stage {
@@ -24,19 +25,25 @@ body {
   height: 510px;
   background-image: url('/img/tile.png');
   position: relative;
+  border: 1px blue solid; 
 }
 
 .entity {
   position: absolute;
   width: 85px;
   height: 85px;
+  border: 1px blue solid; 
+  
 
   &--pac {
     position: absolute;
     font-weight: bold;
     text-align: center;
-    padding-top: 65px;
-    user-select: none;    
+    padding-left: 65px;
+    user-select: none;   
+    
+    
+    border: 1px red solid; 
   }
 
   &--wall {
@@ -59,6 +66,7 @@ body {
 .pacboy {
   &-active-light {
     background-image: url('/img/pacboy-active-light.png');
+    
   }
 
   &-active-medium {
